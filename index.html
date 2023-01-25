@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <head>
-    <title>CRAPY SOUND BAORD</title>
+    <title>CRAPPY SOUND BAORD</title>
     <link rel="favicon/shortcut icon" type=".jpg" href="shortcut.jpg">
+    <script src="script.js"></script>
     <style>
     body{
 
@@ -26,25 +27,39 @@ div{
     </style>
 </head>
 <body>
-    <H1>THIS IS A CRAPY SOUNDBOARD</H1>
+    <H1>THIS IS A CRAPPY SOUNDBOARD</H1>
     <table>
         <tr>
             <td>
-                <div>
-                place holder for fade controlls
-                <embed src="sounds/squee.mp3"alt="squee">
+               
+                <div >
+               jazz controlls
+                <button onclick="jazzloaded()">update</button>
+                <br></br>
+                volume
+                <input id="volume" type="number"></input>
+                <p id="volumeOut">1</p>
+                <br></br>
+                play speed
+                <input id="playspeed" type="number"></input>
+                <p id="speedOut">1</p>
                 </div>
             </td>
             <td>
                 <div>
-                smooth jazz 
-                <embed src="sounds/smoothjazz.mp3"alt="smooooooth jazz">
+                    smooth jazz 
+                    <audio id="jazz" controls>
+                        
+                <source src="sounds/smoothjazz.mp3" type="audio/mp3" />
+                </audio>
                 </div>
             </td>
             <td>
                 <div>
                 end
-                <embed src="sounds/squee.mp3"alt="smoooooother">
+                <audio controls>
+                <source src="sounds/squee.mp3" type="audio/mp3"/>
+                </audio>
                 </div>
             </td>
         </tr>
@@ -52,13 +67,19 @@ div{
             <td>
                 <div>
                     ad time 1
-                    <embed src="sounds/adtime.mp3">
+                    <audio controls>
+                   
+                    <source src="sounds/adtime.mp3"/>
+                </audio>
                 </div>
             </td>
             <td>
                 <div>
                     ad 1 music
-                    <embed src="sounds/admusic.mp3">
+                    <audio controls>
+                    
+                    <source src="sounds/admusic.mp3"/>
+                </audio>
                 </div>
             </td>
         </tr>
@@ -66,14 +87,20 @@ div{
             <td>
                 <div>
                     ad time 2
-                    <embed src="sounds/adtime2.mp3">
+                    <audio controls>
+                    
+                    <source src="sounds/adtime2.mp3"/>
+                </audio>
 
                 </div>
             </td>
             <td>
                 <div>
                     ad 2 music
-                    <embed src="sounds/admusic2.mp3"> 
+                    <audio controls>
+                    
+                    <source src="sounds/admusic2.mp3"/> 
+                </audio>
                 </div>
             </td>
         </tr>
